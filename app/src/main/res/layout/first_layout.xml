@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--界面1-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/背景1">
+
+    <ImageView
+        android:id="@+id/账号"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_Left="@id/edit1"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="265dp"
+        android:src="@drawable/账户" />
+
+    <ImageView
+        android:id="@+id/密码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_left="@id/edit1"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="305dp"
+        android:src="@drawable/密码" />
+
+    <EditText
+        android:id="@+id/edit1"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:hint="账号："
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="250dp"
+    android:MaxLines="1"
+    android:gravity="left"/>
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit1"
+        android:layout_marginLeft="75dp"
+        android:hint="密码："
+        android:MaxLines="1"
+        android:gravity="left"
+        />
+
+    <!--按钮1-->
+    --<Button
+        android:id="@+id/登录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit2"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp"
+        android:text="登录"
+        android:background="#BBBBBB"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/注册"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/登录"
+        android:gravity="center"
+        android:background="#BBBBBB"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit2"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="280dp"
+        android:gravity="center"
+        android:background=""
+        android:textColor="#515151"
+        android:text="关于我们" />
+
+</RelativeLayout>

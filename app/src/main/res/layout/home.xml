@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/背景3">
+
+    <Button
+        android:id="@+id/餐饮图标"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="354dp"
+        android:background="@drawable/餐饮" />
+
+    <TextView
+        android:id="@+id/餐饮"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="430dp"
+        android:background=""
+        android:gravity="center"
+        android:text="餐饮"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/服饰图标"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/服饰" />
+
+    <TextView
+        android:id="@+id/服饰"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit2"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="430dp"
+        android:background=""
+        android:gravity="center"
+        android:text="服饰"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/学习图标"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="362dp"
+        android:background="@drawable/学习" />
+
+    <TextView
+        android:id="@+id/学习"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="430dp"
+        android:background=""
+        android:gravity="center"
+        android:text="学习"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/通讯图标"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="520dp"
+        android:background="@drawable/通讯" />
+
+    <TextView
+        android:id="@+id/通讯"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="596dp"
+        android:background=""
+        android:gravity="center"
+        android:text="通讯"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/医疗图标"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="520dp"
+        android:background="@drawable/医疗" />
+
+    <TextView
+        android:id="@+id/医疗"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="596dp"
+        android:background=""
+        android:gravity="center"
+        android:text="医疗"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/其他图标"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="520dp"
+        android:background="@drawable/其他" />
+
+    <TextView
+        android:id="@+id/其他"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="596dp"
+        android:background=""
+        android:gravity="center"
+        android:text="其他"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/本月支出"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:background=""
+        android:gravity="center"
+        android:text="本月支出"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/本月结余"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="10dp"
+        android:background=""
+        android:gravity="center"
+        android:text="本月结余"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/滑动菜单"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:text="........"
+       />
+
+
+
+</RelativeLayout>
