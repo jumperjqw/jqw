@@ -4,25 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/背景1">
+    android:background="@drawable/beijin1">
 
-    <ImageView
-        android:id="@+id/账号"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_Left="@id/edit1"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="265dp"
-        android:src="@drawable/账户" />
-
-    <ImageView
-        android:id="@+id/密码"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_left="@id/edit1"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="305dp"
-        android:src="@drawable/密码" />
+   <ImageView
+       android:id="@+id/名称"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/mingchen"
+       android:layout_marginTop="80dp"
+       android:layout_marginLeft="35dp"/>
 
     <EditText
         android:id="@+id/edit1"

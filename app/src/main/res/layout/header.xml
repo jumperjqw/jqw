@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="180dp"
     android:padding="10dp"
-    android:background="">
+    android:background="#BBBBBB">
 
-    <de.hdodenhof.circleimageview,CircleImageView
+    <de.hdodenhof.circleimageview.CircleImageView
     android:id="@+id/头像"
     android:layout_width="70dp"
     android:layout_height="70dp"
     android:src="@drawable/头像"
-    android:layout_centerInParent=""
+    android:layout_centerInParent="ture"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="123"
+        android:textColor="#FFF"
+        android:textSise="14sp"
+        />
+
+    <TextView
+    android:id="@+id/mail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:text="234567@qq.com"
+    android:textColor="#FFF"
+    android:textSise="14sp"
+    />
 
 
 
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

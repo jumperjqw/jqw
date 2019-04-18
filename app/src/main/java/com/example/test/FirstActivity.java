@@ -9,15 +9,21 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-//活动（界面）1
-/*public class FirstActivity extends AppCompatActivity {
+import android.widget.Toolbar;
 
-   /* @Override
+//活动（界面）1
+public class FirstActivity extends AppCompatActivity {
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first_layout);
-        Button button1=(Button) findViewById(R.id.button_1);//获取按钮Id
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+    }
+}
+        /*Button button1=(Button) findViewById(R.id.button_1);//获取按钮Id
         button1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

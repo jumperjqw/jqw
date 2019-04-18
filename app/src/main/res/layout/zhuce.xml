@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijin5">
+
+    <EditText
+        android:id="@+id/电话"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="电话："
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="150dp"
+        android:MaxLines="1"
+        android:gravity="left"/>
+
+    <ImageView
+        android:id="@+id/phone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="162dp"
+        android:src="@drawable/dianhua" />
+
+    <EditText
+        android:id="@+id/密码"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:layout_marginLeft="75dp"
+        android:hint="密码："
+        android:MaxLines="1"
+        android:gravity="left"
+        />
+
+    <ImageView
+        android:id="@+id/mima1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="225dp"
+        android:src="@drawable/mima" />
+
+    <EditText
+        android:id="@+id/确认密码"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="75dp"
+        android:hint="确认密码："
+        android:MaxLines="1"
+        android:gravity="left"
+        />
+
+    <EditText
+        android:id="@+id/职业"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="355dp"
+        android:layout_marginLeft="225dp"
+        android:hint="职业:"
+        android:MaxLines="1"
+        android:gravity="left"
+        />
+
+    <ImageView
+        android:id="@+id/job1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="368dp"
+        android:src="@drawable/zhiye" />
+
+    <EditText
+        android:id="@+id/性别1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="性别："
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="355dp"
+        android:MaxLines="1"
+        android:gravity="left"/>
+
+    <ImageView
+        android:id="@+id/sex1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="370dp"
+        android:src="@drawable/xingbie" />
+
+    <EditText
+        android:id="@+id/生日"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="生日："
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="430dp"
+        android:MaxLines="1"
+        android:gravity="left"/>
+
+    <ImageView
+        android:id="@+id/birthday1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="440dp"
+        android:src="@drawable/shengri" />
+
+    <EditText
+        android:id="@+id/邮箱"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="邮箱："
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="505dp"
+        android:MaxLines="1"
+        android:gravity="left"/>
+
+    <ImageView
+        android:id="@+id/mail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="515dp"
+        android:src="@drawable/youxiang" />
+
+    --<Button
+    android:id="@+id/保存"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="75dp"
+    android:layout_marginTop="580dp"
+    android:text="保存"
+    android:background="#BBBBBB"
+    android:gravity="center"
+    />
+
+    --<Button
+    android:id="@+id/取消"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="225dp"
+    android:layout_marginTop="580dp"
+    android:text="取消"
+    android:background="#BBBBBB"
+    android:gravity="center"
+    />
+
+
+
+</RelativeLayout>
