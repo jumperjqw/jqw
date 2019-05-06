@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijin5">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="250dp"
+        android:gravity="left"
+        android:hint="账号："
+        android:maxLines="1" />
+
+    <ImageView
+        android:id="@+id/phone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="260dp"
+        android:src="@drawable/dianhua" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="75dp"
+        android:hint="密码："
+        android:maxLines="1"
+        android:gravity="left"
+        />
+
+    <ImageView
+        android:id="@+id/mima1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="360dp"
+        android:src="@drawable/mima" />
+
+    <EditText
+        android:id="@+id/password_next"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="75dp"
+        android:hint="确认密码："
+        android:maxLines="1"
+        android:gravity="left"
+        />
+
+    <!--<EditText
+        android:id="@+id/职业"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="355dp"
+        android:layout_marginLeft="225dp"
+        android:hint="职业:"
+        android:maxLines="1"
+        android:gravity="left"
+        />
+
+    <ImageView
+        android:id="@+id/job1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="368dp"
+        android:src="@drawable/zhiye" />
+
+    <EditText
+        android:id="@+id/性别1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="性别："
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="355dp"
+        android:maxLines="1"
+        android:gravity="left"/>
+
+    <ImageView
+        android:id="@+id/sex1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="370dp"
+        android:src="@drawable/xingbie" /> -->
+
+
+    --
+
+    --
+
+    <Button
+    android:id="@+id/exit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="225dp"
+    android:layout_marginTop="580dp"
+    android:text="取消"
+    android:background="#BBBBBB"
+    android:gravity="center"
+    />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="580dp"
+        android:background="#BBBBBB"
+        android:gravity="center"
+        android:text="保存" />
+
+
+</RelativeLayout>

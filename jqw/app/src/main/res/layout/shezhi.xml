@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijin7">
+
+    <EditText
+        android:id="@+id/餐饮"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="75dp"
+        android:hint="餐饮："
+        android:maxLines="1"
+        android:gravity="left"
+        />
+    <ImageView
+        android:id="@+id/餐饮1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="210dp"
+        android:src="@drawable/canyin1" />
+
+    <EditText
+        android:id="@+id/服饰"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="225dp"
+        android:hint="服饰："
+        android:maxLines="1"
+        android:gravity="left"
+        />
+
+    <ImageView
+        android:id="@+id/服饰1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="215dp"
+        android:src="@drawable/fushi1" />
+
+    <EditText
+        android:id="@+id/通讯"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="75dp"
+        android:hint="通讯："
+        android:maxLines="1"
+        android:gravity="left"
+        />
+
+    <ImageView
+        android:id="@+id/通讯1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="292dp"
+        android:src="@drawable/tongxun1" />
+
+    <EditText
+        android:id="@+id/学习"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="225dp"
+        android:hint="学习："
+        android:maxLines="1"
+        android:gravity="left"
+        />
+
+    <ImageView
+        android:id="@+id/学习1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="202dp"
+        android:layout_marginTop="293dp"
+        android:src="@drawable/xuexi1" />
+
+
+    <EditText
+        android:id="@+id/医疗"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="75dp"
+        android:hint="医疗："
+        android:maxLines="1"
+        android:gravity="left"
+        />
+
+    <ImageView
+        android:id="@+id/医疗1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="370dp"
+        android:src="@drawable/yiliao1" />
+
+    <EditText
+        android:id="@+id/其他"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="225dp"
+        android:hint="其他："
+        android:maxLines="1"
+        android:gravity="left"
+        />
+
+    <ImageView
+        android:id="@+id/其他1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="208dp"
+        android:layout_marginTop="370dp"
+        android:src="@drawable/qita1" />
+
+    <EditText
+        android:id="@+id/总值"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="总值："
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="440dp"
+        android:maxLines="1"
+        android:gravity="left"/>
+
+    <ImageView
+        android:id="@+id/总值1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="445dp"
+        android:src="@drawable/zongzhi" />
+
+    <EditText
+        android:id="@+id/预警百分比"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="预警百分比："
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="520dp"
+        android:maxLines="1"
+        android:gravity="left"/>
+
+    <ImageView
+        android:id="@+id/百分比"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="530dp"
+        android:src="@drawable/baifenbi" />
+
+    <Button
+        android:id="@+id/保存"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="600dp"
+        android:text="保存"
+        android:background="#BBBBBB"
+        android:gravity="center"
+        />
+
+    --<Button
+    android:id="@+id/取消"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="225dp"
+    android:layout_marginTop="600dp"
+    android:text="取消"
+    android:background="#BBBBBB"
+    android:gravity="center"
+    />
+</RelativeLayout>

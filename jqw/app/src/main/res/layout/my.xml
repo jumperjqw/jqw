@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijin4">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="用户名："
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="150dp"
+        android:maxLines="1"
+        android:gravity="left"/>
+
+    <ImageView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="165dp"
+        android:src="@drawable/zhanghu" />
+
+    <EditText
+        android:id="@+id/birthday"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:layout_marginLeft="75dp"
+        android:hint="生日："
+        android:maxLines="1"
+        android:gravity="left"
+        />
+
+    <ImageView
+        android:id="@+id/birthday1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="230dp"
+        android:src="@drawable/shengri" />
+
+    <EditText
+        android:id="@+id/job"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="75dp"
+        android:hint="职业："
+        android:maxLines="1"
+        android:gravity="left"
+        />
+
+    <EditText
+        android:id="@+id/sex"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="225dp"
+        android:hint="性别："
+        android:maxLines="1"
+        android:gravity="left"
+        />
+
+    <ImageView
+        android:id="@+id/sex1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="295dp"
+        android:src="@drawable/xingbie" />
+
+    <ImageView
+        android:id="@+id/job1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="295dp"
+        android:src="@drawable/zhiye" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="邮箱："
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="355dp"
+        android:maxLines="1"
+        android:gravity="left"/>
+
+    <ImageView
+        android:id="@+id/mail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="370dp"
+        android:src="@drawable/youxiang" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="电话："
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="430dp"
+        android:maxLines="1"
+        android:gravity="left"/>
+
+    <ImageView
+        android:id="@+id/phone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="445dp"
+        android:src="@drawable/dianhua" />
+
+    <Button
+    android:id="@+id/set"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="75dp"
+    android:layout_marginTop="505dp"
+    android:text="保存"
+    android:background="#BBBBBB"
+    android:gravity="center"
+    />
+
+    --<Button
+    android:id="@+id/cancle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="225dp"
+    android:layout_marginTop="505dp"
+    android:text="取消"
+    android:background="#BBBBBB"
+    android:gravity="center"
+    />
+
+
+</RelativeLayout>

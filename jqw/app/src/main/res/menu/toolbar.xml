@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/添加"
+        android:icon="@drawable/tianjia"
+        android:title="添加"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/删除"
+        android:icon="@drawable/delete"
+        android:title="删除"
+        app:showAsAction="never"/>
+
+
+
+
+</menu>
