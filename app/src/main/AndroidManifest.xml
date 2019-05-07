@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".noteActivity"></activity>
+        <activity android:name=".tongjiActivity"></activity>
+        <activity android:name=".noteActivity" />
         <activity android:name=".totalActivity" />
         <activity android:name=".inforActivity" />
         <activity android:name=".settingActivity" />

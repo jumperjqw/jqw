@@ -1,6 +1,8 @@
 package com.example.test;
 
+import android.content.ClipData;
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -65,44 +67,56 @@ public class SecondActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button button7 = (Button) findViewById(R.id.my);
-        button7.setOnClickListener(new View.OnClickListener() {
+
+        final NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+
+        navigationView.setCheckedItem(R.id.jilu);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SecondActivity.this, inforActivity.class);
+            public boolean onNavigationItemSelected(MenuItem item) {
+                Intent intent = new Intent(SecondActivity.this, noteActivity.class);
                 startActivity(intent);
-            }
-        });
-        Button button8 = (Button) findViewById(R.id.setting);
-        button8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SecondActivity.this, settingActivity.class);
-                startActivity(intent);
-            }
-        });
-        Button button9 = (Button) findViewById(R.id.jilu);
-        button9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SecondActivity.this, totalActivity.class);
-                startActivity(intent);
-            }
-        });
-        /*navigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar !=null){
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            //actionBar.setHomeAsUpIndicator(R.drawable.bg_transparent);
-        }
-        /*
-        navigationView.setCheckedItem(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener(){
-            @Override
-            public boolean onNavigationItemSelected(MenuItem item){
-                DrawerLayout.closeDrawers();
                 return true;
             }
-        });*/
+        });
+
+        navigationView.setCheckedItem(R.id.my);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                Intent intent = new Intent(SecondActivity.this, inforActivity.class);
+                startActivity(intent);
+                return true;
+            }
+        });
+
+        navigationView.setCheckedItem(R.id.setting);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                Intent intent = new Intent(SecondActivity.this, settingActivity.class);
+                startActivity(intent);
+                return true;
+            }
+        });
+        navigationView.setCheckedItem(R.id.tongji);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                Intent intent = new Intent(SecondActivity.this, tongjiActivity.class);
+                startActivity(intent);
+                return true;
+            }
+        });
+        FloatingActionButton fab = (FloatingActionButton)findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SecondActivity.this, noteActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
+
+

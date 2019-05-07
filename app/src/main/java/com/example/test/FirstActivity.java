@@ -34,31 +34,31 @@ public class FirstActivity extends AppCompatActivity {
            @Override
            public void onClick(View v) {
                String a=username.getText().toString();
-               String b=password.getText().toString();
-               if(a.equals("")||b.equals("")){
-                   new AlertDialog.Builder(FirstActivity.this)
-                           .setTitle("Error")
-                           .setMessage("账号或密码不能为空")
-                           .setPositiveButton("确认",null)
-                           .show();
-                   username.getText().clear();
-                   password.getText().clear();
-               }
-               else {
-                   try{
-                       String str = "select * from tb_user where name=? and password=?";
-                       Cursor cursor=db.rawQuery(str,new String[]{a,b});
-                       if(cursor.getCount()<=0){
-                           new AlertDialog.Builder(FirstActivity.this)
-                                   .setTitle("Error")
-                                   .setMessage("账号或密码错误！")
-                                   .setPositiveButton("确认",null)
-                                    .show();
-                       }
-                       else {
-                           Toast.makeText(FirstActivity.this,"登录成功",Toast.LENGTH_SHORT).show();
-                           Intent intent = new Intent();
-                           intent.setClass(FirstActivity.this, SecondActivity.class);
+                           String b=password.getText().toString();
+                           if(a.equals("")||b.equals("")){
+                               new AlertDialog.Builder(FirstActivity.this)
+                                       .setTitle("Error")
+                                       .setMessage("账号或密码不能为空")
+                                       .setPositiveButton("确认",null)
+                                       .show();
+                               username.getText().clear();
+                               password.getText().clear();
+                           }
+                           else {
+                               try{
+                                   String str = "select * from tb_user where name=? and password=?";
+                                   Cursor cursor=db.rawQuery(str,new String[]{a,b});
+                                   if(cursor.getCount()<=0){
+                                       new AlertDialog.Builder(FirstActivity.this)
+                                               .setTitle("Error")
+                                               .setMessage("账号或密码错误！")
+                                               .setPositiveButton("确认",null)
+                                               .show();
+                                   }
+                                   else {
+                                       Toast.makeText(FirstActivity.this,"登录成功",Toast.LENGTH_SHORT).show();
+                                       Intent intent = new Intent();
+                                       intent.setClass(FirstActivity.this, SecondActivity.class);
                            startActivity(intent);
                            //FirstActivity.this.onDestroy();
                        }
