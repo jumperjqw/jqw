@@ -23,13 +23,22 @@
         android:layout_marginTop="260dp"
         android:src="@drawable/dianhua" />-->
 
-    <EditText
-        android:id="@+id/note_type"
-        android:layout_width="250dp"
+    <TextView
+        android:id="@+id/note_type2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
-        android:layout_marginLeft="75dp"
-        android:hint="类型："
+        android:text="类型"
+        android:layout_marginTop="369dp"
+        android:layout_marginLeft="79dp"
+        android:textSize="18dp"/>
+
+    <Spinner
+        android:id="@+id/note_type"
+        android:layout_width="200dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="369dp"
+        android:layout_marginLeft="125dp"
+        android:background="#FFFFFF"
         android:maxLines="1"
         android:gravity="left"
         />
