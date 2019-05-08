@@ -19,7 +19,7 @@ public class phoneActivity extends AppCompatActivity {
         {
             this.date=date;
             this.miney=money;
-            this.remark=remark
+            this.remark=remark;
         }
     }
 }

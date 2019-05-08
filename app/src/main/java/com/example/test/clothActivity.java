@@ -24,20 +24,21 @@ public class clothActivity extends AppCompatActivity {
     private int lastPress = 0;
     private boolean delState = false;
     private List<String> curList = new ArrayList<>();
-
     private ListView curListView;
-    private CurAdapter adapter;
+
+   // private CurAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cloth);
-        ArrayAdapter<String>adapter=new ArrayAdapter<String>(
-                clothActivity.this,android.R.layout.simple_list_item_1);
-        ListView listView=(ListView)findViewById(R.id.list_view_cloth);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                clothActivity.this, android.R.layout.simple_list_item_1);
+        ListView listView = (ListView) findViewById(R.id.list_view_cloth);
         listView.setAdapter(adapter);
-    }
 
-    public class note{
+//Listview
+   /* public class note{
         private String date;
         private float miney;
         private String remark;
@@ -64,9 +65,9 @@ public class clothActivity extends AppCompatActivity {
             TextView money=(TextView)view.findViewById(R.id.money1);
             TextView remarks=(TextView)view.findViewById(R.id.remarks1);
 
-        }
+        }*/
 //删除
-        curListView = (ListView) findViewById(R.id.list_view_cloth);
+       /* curListView = (ListView) findViewById(R.id.list_view_cloth);
         adapter = new CurAdapter();
         curListView.setAdapter(adapter);
 
@@ -121,28 +122,42 @@ public class clothActivity extends AppCompatActivity {
             }
         });
     }
+
     private class CurAdapter extends BaseAdapter {
         @Override
         public int getCount() {
             return curList.size();
         }
+
         @Override
         public Object getItem(int position) {
             return position;
         }
+
         @Override
         public long getItemId(int position) {
             return position;
         }
-       @Override
+
+        @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             if (null == convertView) {
                 convertView = LayoutInflater.from(Context).inflate(R.layout.item_content_delete, null);
             }
             ((TextView) convertView.findViewById(R.id.)).setText(curList.get(position));
             return convertView;
-        }
+        }*/
     }
+}
+
+
+
+
+
+
+
+
+
 
     /*public boolean onCreateOptionsMenu(Menu menu){
     getMenuInflater().inflate(R.menu.toolbar,menu);
@@ -160,4 +175,4 @@ public class clothActivity extends AppCompatActivity {
         }
         return true;
     }*/
-}
+

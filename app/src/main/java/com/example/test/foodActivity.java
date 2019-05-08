@@ -19,7 +19,7 @@ public class foodActivity extends AppCompatActivity {
         {
             this.date=date;
             this.miney=money;
-            this.remark=remark
+            this.remark=remark;
         }
     }
 }

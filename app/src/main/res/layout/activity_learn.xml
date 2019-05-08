@@ -62,7 +62,7 @@
             android:id="@+id/note_cancel"
             android:layout_width="0dp"
             android:text="取消"
-            android:textColor="#00000"
+            android:textColor="#000000"
             android:background="#808080"
             android:gravity="center"
             android:layout_weight="1"
