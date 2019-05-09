@@ -12,14 +12,14 @@
        android:layout_height="wrap_content"
        android:src="@drawable/mingchen"
        android:layout_marginTop="80dp"
-       android:layout_marginLeft="35dp"/>
+       android:layout_marginLeft="50dp"/>
 
     <EditText
         android:id="@+id/edit1"
     android:layout_width="250dp"
     android:layout_height="wrap_content"
     android:hint="账号："
-        android:layout_marginLeft="75dp"
+        android:layout_marginLeft="60dp"
         android:layout_marginTop="250dp"
       android:maxLines="1"
     android:gravity="left"/>
@@ -29,8 +29,8 @@
      android:layout_width="250dp"
      android:layout_height="wrap_content"
      android:layout_below="@id/edit1"
-     android:layout_marginLeft="75dp"
-     android:layout_marginTop="-5dp"
+     android:layout_marginLeft="60dp"
+     android:layout_marginTop="10dp"
      android:gravity="left"
      android:hint="密码："
      android:maxLines="1" />
@@ -41,8 +41,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/edit2"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="20dp"
         android:text="登录"
         android:background="#BBBBBB"
         android:gravity="center"
@@ -54,8 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/edit2"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="100dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
         android:layout_toRightOf="@id/button1"
         android:gravity="center"
         android:background="#BBBBBB"
@@ -66,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/edit2"
-        android:layout_marginLeft="155dp"
+        android:layout_marginLeft="140dp"
         android:layout_marginTop="280dp"
         android:gravity="center"
         android:textColor="#515151"

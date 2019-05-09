@@ -76,7 +76,7 @@ public class SecondActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
-                Intent intent = new Intent(SecondActivity.this, noteActivity.class);
+                Intent intent = new Intent(SecondActivity.this, totalActivity.class);
                 startActivity(intent);
                 return true;
             }
