@@ -67,7 +67,7 @@ public class clothActivity extends AppCompatActivity {
 
         }*/
 //删除
-       /* curListView = (ListView) findViewById(R.id.list_view_cloth);
+        /*curListView = (ListView) findViewById(R.id.list_view_cloth);
         adapter = new CurAdapter();
         curListView.setAdapter(adapter);
 
@@ -107,7 +107,7 @@ public class clothActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         delview.setVisibility(View.GONE);
                         curList.remove(position);
-                        adapter.notifyDataSetChanged();
+                        final adapter.notifyDataSetChanged();
                     }
                 });
                 delview.findViewById(R.id.note_cancel).setOnClickListener(new View.OnClickListener() {

@@ -7,19 +7,19 @@
 
     <ImageButton
         android:id="@+id/touxiang"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:src="@drawable/touxiang"
-        android:layout_marginLeft="165dp"
+        android:layout_marginLeft="144dp"
+        android:gravity="center"
         android:layout_marginTop="120dp"
-        android:background="#"
         />
 
     <EditText
         android:id="@+id/username"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="75dp"
+        android:layout_marginLeft="64dp"
         android:layout_marginTop="250dp"
         android:gravity="left"
         android:hint="账号："
@@ -29,7 +29,7 @@
         android:id="@+id/phone1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="56dp"
+        android:layout_marginLeft="45dp"
         android:layout_marginTop="260dp"
         android:src="@drawable/dianhua" />
 
@@ -38,7 +38,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="350dp"
-        android:layout_marginLeft="75dp"
+        android:layout_marginLeft="64dp"
         android:hint="密码："
         android:maxLines="1"
         android:gravity="left"
@@ -48,7 +48,7 @@
         android:id="@+id/mima1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="56dp"
+        android:layout_marginLeft="45dp"
         android:layout_marginTop="360dp"
         android:src="@drawable/mima" />
 
@@ -57,7 +57,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="450dp"
-        android:layout_marginLeft="75dp"
+        android:layout_marginLeft="64dp"
         android:hint="确认密码："
         android:maxLines="1"
         android:gravity="left"
@@ -128,7 +128,7 @@
     android:id="@+id/button1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="75dp"
+    android:layout_marginLeft="64dp"
     android:layout_marginTop="580dp"
     android:text="保存"
     android:background="#BBBBBB"
@@ -139,7 +139,7 @@
     android:id="@+id/exit"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="225dp"
+    android:layout_marginLeft="214dp"
     android:layout_marginTop="580dp"
     android:text="取消"
     android:background="#BBBBBB"

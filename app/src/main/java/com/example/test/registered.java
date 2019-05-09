@@ -129,7 +129,7 @@ public class registered extends AppCompatActivity {
 
        // 点击头像进行更换头像
 
-        touxiang.setOnClickListener(new View.OnClickListener() {
+       /* touxiang.3(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
@@ -141,12 +141,12 @@ public class registered extends AppCompatActivity {
     });
 
 
-   /* private void initView() {
+    private void initView() {
         LL01=(LinearLayout)getActivity().findViewById(R.id.LL01);
         LL02=(LinearLayout)getActivity().findViewById(R.id.LL02);
         LL03=(LinearLayout)getActivity().findViewById(R.id.LL03);*/
 
-        touxiang = (ImageButton)getActivity().findViewById(R.id.touxiang);
+        /*touxiang = (ImageButton)getActivity().findViewById(R.id.touxiang);
         Bitmap bt = BitmapFactory.decodeFile(path + "head.jpg");// 从SD卡中找头像，转换成Bitmap
         if (bt != null) {
             @SuppressWarnings("deprecation")
@@ -212,7 +212,7 @@ public class registered extends AppCompatActivity {
                         /**
                          * 上传服务器代码
                          */
-                        setPicToView(head);// 保存在SD卡中
+                        /*setPicToView(head);// 保存在SD卡中
                         touxiang.setImageBitmap(head);// 用ImageButton显示出来
                     }
                 }
@@ -229,7 +229,7 @@ public class registered extends AppCompatActivity {
      *
      * @param uri
      */
-    public void cropPhoto(Uri uri) {
+   /* public void cropPhoto(Uri uri) {
         Intent intent = new Intent("com.android.camera.action.CROP");
         intent.setDataAndType(uri, "image/*");
         intent.putExtra("crop", "true");
@@ -266,7 +266,7 @@ public class registered extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-    }
+    }*/
 }
 
 
