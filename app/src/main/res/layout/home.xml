@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<android.support.v4.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-     android:background="@drawable/beijin3"
-    >
-
-
-        <!--android:id="@+id/drawer_layout"
+    android:layout_height="match_parent">
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/背景3">-->
+        android:background="@drawable/beijin3"
+        >
 
-    <Button
-        android:id="@+id/food_pic"
-        android:layout_width="63dp"
-        android:layout_height="57dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="375dp"
-        android:background="@drawable/canyin" />
+
+        <Button
+            android:id="@+id/food_pic"
+            android:layout_width="63dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="375dp"
+            android:background="@drawable/canyin" />
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -31,168 +30,186 @@
             />
 
 
-    <TextView
-        android:id="@+id/food"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="430dp"
+        <TextView
+            android:id="@+id/food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="430dp"
 
-        android:gravity="center"
-        android:text="餐饮"
-        android:textSize="25sp" />
+            android:gravity="center"
+            android:text="餐饮"
+            android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/cloth_pic"
-        android:layout_width="58dp"
-        android:layout_height="58dp"
-        android:layout_marginLeft="180dp"
-        android:layout_marginTop="380dp"
-        android:background="@drawable/fushi" />
+        <Button
+            android:id="@+id/cloth_pic"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="380dp"
+            android:background="@drawable/fushi" />
 
-    <TextView
-        android:id="@+id/cloth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/edit2"
-        android:layout_marginLeft="183dp"
-        android:layout_marginTop="430dp"
+        <TextView
+            android:id="@+id/cloth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit2"
+            android:layout_marginLeft="183dp"
+            android:layout_marginTop="430dp"
 
-        android:gravity="center"
-        android:text="服饰"
-        android:textSize="25sp" />
+            android:gravity="center"
+            android:text="服饰"
+            android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/learn_pic"
-        android:layout_width="62dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="303dp"
-        android:layout_marginTop="380dp"
-        android:background="@drawable/xuexi" />
+        <Button
+            android:id="@+id/learn_pic"
+            android:layout_width="62dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="303dp"
+            android:layout_marginTop="380dp"
+            android:background="@drawable/xuexi" />
 
-    <TextView
-        android:id="@+id/learn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="308dp"
-        android:layout_marginTop="430dp"
+        <TextView
+            android:id="@+id/learn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="308dp"
+            android:layout_marginTop="430dp"
 
-        android:gravity="center"
-        android:text="学习"
-        android:textSize="25sp" />
+            android:gravity="center"
+            android:text="学习"
+            android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/phone_pic"
-        android:layout_width="53dp"
-        android:layout_height="52dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="530dp"
-        android:background="@drawable/tongxun" />
+        <Button
+            android:id="@+id/phone_pic"
+            android:layout_width="53dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="530dp"
+            android:background="@drawable/tongxun" />
 
-    <TextView
-        android:id="@+id/phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="580dp"
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="580dp"
 
-        android:gravity="center"
-        android:text="通讯"
-        android:textSize="25sp" />
+            android:gravity="center"
+            android:text="通讯"
+            android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/medical_pic"
-        android:layout_width="64dp"
-        android:layout_height="56dp"
-        android:layout_marginLeft="175dp"
-        android:layout_marginTop="530dp"
-        android:background="@drawable/yiliao" />
+        <Button
+            android:id="@+id/medical_pic"
+            android:layout_width="64dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="175dp"
+            android:layout_marginTop="530dp"
+            android:background="@drawable/yiliao" />
 
-    <TextView
-        android:id="@+id/medical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="183dp"
-        android:layout_marginTop="580dp"
+        <TextView
+            android:id="@+id/medical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="183dp"
+            android:layout_marginTop="580dp"
 
-        android:gravity="center"
-        android:text="医疗"
-        android:textSize="25sp" />
+            android:gravity="center"
+            android:text="医疗"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/other_pic"
+            android:layout_width="57dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="305dp"
+            android:layout_marginTop="530dp"
+            android:background="@drawable/qita" />
 
-    <Button
-        android:id="@+id/other_pic"
-        android:layout_width="57dp"
-        android:layout_height="52dp"
-        android:layout_marginLeft="305dp"
-        android:layout_marginTop="530dp"
-        android:background="@drawable/qita" />
+        <TextView
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="308dp"
+            android:layout_marginTop="580dp"
 
-    <TextView
-        android:id="@+id/other"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="308dp"
-        android:layout_marginTop="580dp"
+            android:gravity="center"
+            android:text="其他"
+            android:textSize="25sp" />
 
-        android:gravity="center"
-        android:text="其他"
-        android:textSize="25sp" />
+        <TextView
+            android:id="@+id/pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="50dp"
 
-    <TextView
-        android:id="@+id/pay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="本月支出"
+            android:textSize="30sp" />
 
-        android:gravity="center"
-        android:text="本月支出"
-        android:textSize="30sp" />
+        <TextView
+            android:id="@+id/pay_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="100dp"
+            android:textColor="#EEC211"
+            android:gravity="center"
+            android:text="0000.00"
+            android:textSize="30sp" />
 
-    <TextView
-        android:id="@+id/cash"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="260dp"
-        android:layout_marginTop="50dp"
+        <TextView
+            android:id="@+id/cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="本月结余"
+            android:textSize="30sp" />
 
-        android:gravity="center"
-        android:text="本月结余"
-        android:textSize="30sp" />
+        <TextView
+            android:id="@+id/cash_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="100dp"
+            android:textColor="#EEC211"
+            android:gravity="center"
+            android:text="0000.00"
+            android:textSize="30sp" />
 
 
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/beijin4"-->
-        <!--<RelativeLayout
-        android:id="@+id/nav_view"
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="32dp"
+            android:src="@drawable/fab" />
+
+
+
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:menu="@menu/nav_menu"
-        android:headerLayout="@layout/header"
-        />-->
+        android:layout_gravity="start">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="32dp"
-        android:src="@drawable/fab" />
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/beijin7"
+            app:menu="@menu/nav_menu"
+            app:headerLayout="@layout/header"/>
 
+    </FrameLayout>
 
 
-
-
-
-<android.support.design.widget.NavigationView
- android:id="@+id/nav_view"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/beijin7"
-    android:layout_gravity="start"
-    app:menu="@menu/nav_menu"
-    app:headerLayout="@layout/header"/>
-</FrameLayout>
+</android.support.v4.widget.DrawerLayout>

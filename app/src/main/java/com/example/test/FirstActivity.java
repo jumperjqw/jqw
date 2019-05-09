@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
+import android.os.SystemClock;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -56,11 +57,15 @@ public class FirstActivity extends AppCompatActivity {
                                                .show();
                                    }
                                    else {
-                                       Toast.makeText(FirstActivity.this,"登录成功",Toast.LENGTH_SHORT).show();
+                                       new AlertDialog.Builder(FirstActivity.this)
+                                               .setTitle("Toast")
+                                               .setMessage("登录成功")
+                                               .setPositiveButton("确认",null)
+                                               .show();
                                        Intent intent = new Intent();
                                        intent.setClass(FirstActivity.this, SecondActivity.class);
                            startActivity(intent);
-                           //FirstActivity.this.onDestroy();
+                           FirstActivity.this.onDestroy();
                        }
                    }catch(SQLiteException e){
                        createDb();

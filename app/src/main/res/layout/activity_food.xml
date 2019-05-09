@@ -45,28 +45,28 @@
         android:id="@+id/linear_del"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:visibility="gone"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <TextView
             android:id="@+id/note_del"
             android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="删除"
-            android:textColor="#000000"
             android:background="#808080"
             android:gravity="center"
-            android:layout_height="match_parent" />
+            android:text="删除"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/note_cancel"
             android:layout_width="0dp"
-            android:text="取消"
-            android:textColor="#00000"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:background="#808080"
             android:gravity="center"
-            android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:text="取消"
+            android:textColor="#000000" />
     </LinearLayout>
 
 </RelativeLayout>

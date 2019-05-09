@@ -14,11 +14,13 @@ import android.widget.Button;
 import android.widget.Toolbar;
 //主页
 public class SecondActivity extends AppCompatActivity {
-
+    private myDatabaseHelper dbHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
+        //dbHelper =new myDatabaseHelper(this,"book.db",null,1);
+        //dbHelper.getWritableDatabase();
         Button button1 = (Button) findViewById(R.id.food_pic);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
