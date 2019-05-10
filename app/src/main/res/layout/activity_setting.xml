@@ -6,7 +6,7 @@
     android:background="@drawable/beijin7">
 
     <EditText
-        android:id="@+id/餐饮"
+        android:id="@+id/canying"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
@@ -24,7 +24,7 @@
         android:src="@drawable/canyin1" />
 
     <EditText
-        android:id="@+id/服饰"
+        android:id="@+id/cloth"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
@@ -43,7 +43,7 @@
         android:src="@drawable/fushi1" />
 
     <EditText
-        android:id="@+id/通讯"
+        android:id="@+id/phone"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="280dp"
@@ -62,7 +62,7 @@
         android:src="@drawable/tongxun1" />
 
     <EditText
-        android:id="@+id/学习"
+        android:id="@+id/learn"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="280dp"
@@ -82,7 +82,7 @@
 
 
     <EditText
-        android:id="@+id/医疗"
+        android:id="@+id/medical"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="360dp"
@@ -101,7 +101,7 @@
         android:src="@drawable/yiliao1" />
 
     <EditText
-        android:id="@+id/其他"
+        android:id="@+id/other"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="360dp"
@@ -120,7 +120,7 @@
         android:src="@drawable/qita1" />
 
     <EditText
-        android:id="@+id/总值"
+        android:id="@+id/sum"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:hint="总值："
@@ -138,7 +138,7 @@
         android:src="@drawable/zongzhi" />
 
     <EditText
-        android:id="@+id/预警百分比"
+        android:id="@+id/sum_bfb"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:hint="预警百分比："
@@ -156,7 +156,7 @@
         android:src="@drawable/baifenbi" />
 
     <Button
-        android:id="@+id/保存"
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="64dp"
@@ -167,7 +167,7 @@
         />
 
     --<Button
-    android:id="@+id/取消"
+    android:id="@+id/button2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginLeft="214dp"

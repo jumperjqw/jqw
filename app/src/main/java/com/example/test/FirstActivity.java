@@ -62,6 +62,7 @@ public class FirstActivity extends AppCompatActivity {
                                                .setMessage("登录成功")
                                                .setPositiveButton("确认",null)
                                                .show();
+
                                        Intent intent = new Intent();
                                        intent.setClass(FirstActivity.this, SecondActivity.class);
                            startActivity(intent);

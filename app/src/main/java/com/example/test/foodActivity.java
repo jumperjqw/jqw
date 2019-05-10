@@ -1,5 +1,6 @@
 package com.example.test;
 
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -12,6 +13,8 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.view.LayoutInflater;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.view.View;
@@ -28,69 +31,30 @@ public class foodActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food);
-        dbhelper = new myDatabaseHelper(this, "book", null, 2);
+        dbhelper = new myDatabaseHelper(this, "book.db", null, 2);
         noteList = new ArrayList<note>();
-
-    }
-    public void Query_Data(View v) {
         SQLiteDatabase db = dbhelper.getWritableDatabase();
-        Cursor cursor = db.query("book", null, null, null, null, null, null);
+        Cursor cursor = db.query("book", null, "leixing=?",new String[]{"餐饮"} , null, null, null);
         while (cursor.moveToNext()) {
             String date = cursor.getString(cursor.getColumnIndex("leixing"));
-            String miney = cursor.getString(cursor.getColumnIndex("jine"));
-            int time = cursor.getInt(cursor.getColumnIndex("time"));
+            int  miney = cursor.getInt(cursor.getColumnIndex("jine"));
+            String time = cursor.getString(cursor.getColumnIndex("time"));
             String remark = cursor.getString(cursor.getColumnIndex("beizhu"));
             note p=new note(date,miney,remark,time);
-                noteList.add(p);
+            noteList.add(p);
         }
         ListView lv = (ListView) findViewById(R.id.list_view_cloth);
-        //设置适配器
-        lv.setAdapter(new MyAapter());
-
-    }
-    //适配器类
-    class MyAapter extends BaseAdapter {
-
-        //获取集合中有多少条元素,由系统调用
-        @Override
-        public int getCount() {
-            // TODO Auto-generated method stub
-            return noteList.size();
-        }
-
-        @Override
-        public Object getItem(int position) {
-            // TODO Auto-generated method stub
-            return null;
-        }
-
-        @Override
-        public long getItemId(int position) {
-            // TODO Auto-generated method stub
-            return 0;
-        }
-
-        //由系统调用，返回一个view对象作为listview的条目
-        /*
-         * position：本次getView方法调用所返回的view对象在listView中处于第几个条目，position的值就为多少
-         * */
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            TextView tv = new TextView(foodActivity.this);
-            tv.setTextSize(18);
-            //获取集合中的元素
-            note s = noteList.get(position);
-            tv.setText(s.toString());
-
-            return tv;
-        }
+        ArrayAdapter<note> adapter = new ArrayAdapter<note>(
+                foodActivity.this,android.R.layout.simple_list_item_1,noteList
+        );
+        lv.setAdapter(adapter);
     }
     public class note{
         private String leixing;
-        private String miney;
+        private int miney;
         private String remark;
-        private int time;
-        public note(String date,String money,String remark,int time)
+        private String  time;
+        public note(String date,int money,String remark,String time)
         {
             this.leixing=date;
             this.miney=money;
@@ -100,6 +64,15 @@ public class foodActivity extends AppCompatActivity {
         @Override
         public String toString() {
             return  leixing + "," + miney + ", " + time+ ", " + remark ;
+        }
+        public String getleixing(){
+            return this.leixing;
+        }
+        public int getMiney(){
+            return this.miney;
+        }
+        public String getRemark(){
+            return this.remark;
         }
     }
 }

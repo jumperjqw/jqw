@@ -3,6 +3,7 @@ package com.example.test;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.support.v7.app.AlertDialog;
@@ -18,6 +19,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Date;
+
+import   java.text.SimpleDateFormat;
 
 public class noteActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
     private Spinner spinner;
@@ -28,6 +32,7 @@ public class noteActivity extends AppCompatActivity implements AdapterView.OnIte
     private TextView mytext;
     private String leixing;
     private myDatabaseHelper dbhelper;
+    Date dt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,9 +80,12 @@ public class noteActivity extends AppCompatActivity implements AdapterView.OnIte
                     java.util.Date writeTime = new java.util.Date();
                     SQLiteDatabase db = dbhelper.getWritableDatabase();
                     ContentValues values = new ContentValues();
+                    SimpleDateFormat   formatter   =   new   SimpleDateFormat   ("yyyy年MM月dd日HH:mm:ss");
+                    Date curDate =  new Date(System.currentTimeMillis());
+                    String   str   =   formatter.format(curDate);
                     values.put("jine", a);
                     values.put("leixing", c);
-                    values.put("time", writeTime.getTime());
+                    values.put("time", str);
                     values.put("beizhu", b);
                     db.insert("book", null, values);
                     values.clear();
